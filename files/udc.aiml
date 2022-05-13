@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>*</pattern>
+    <template>Non penso di aver capito, digita "informazioni", "info" oppure "i", per saperne di più.</template>
+  </category>
+<category>
+	<pattern>informazioni</pattern>
+	<template>Benvenuto nel bot del ristorante "...",
+Digitando le seguenti parole potrai ricevere diverse informazioni per quanto riguarda il nostro locale. 
+
+<button>
+    <text>posizione</text>
+    <postback>posizione</postback>
+</button>
+<button>
+    <text>orari</text>
+    <postback>orari</postback>
+</button>
+<button>
+    <text>menu</text>
+    <postback>menu</postback>
+</button><button>
+    <text>social</text>
+    <postback>social</postback>
+</button>
+
+</template>
+</category>
+
+<category><pattern>info</pattern><template><srai>INFORMAZIONI</srai></template></category>
+<category><pattern>i</pattern><template><srai>INFORMAZIONI</srai></template></category>
+
+
+<topic name="Saluti">
+	<category>
+		<pattern>HI</pattern>
+		<that>Aà, come te va?</that>
+		<template>d</template>
+	</category>
+</topic>
+
+<category>
+    <pattern>posizione</pattern>
+    <template>Puoi trovare il nostro ristorante a Settimo Torinese, Via Torino 980 (TO).</template>
+</category>
+<category>
+    <pattern>orari</pattern>
+    <template>
+
+Puoi trovarci aperti tutti i giorni ai seguenti orari :
+lunedì12–15/18:30-22:30
+martedì12–15/18:30-22:30
+mercoledì12–15/18:30-22:30
+giovedì12–15/18:30-22:30
+venerdì12–15/18:30-23:30
+sabato12–15/18:00-00:00
+domenica12–15/18:30-23:30
+
+</template>
+</category>
+
+<category><pattern>menù</pattern><template>
+Antipasti
+Un’anguilla risale il fiume Po
+€ 80
+Cinque stagionature del Parmigiano Reggiano in diverse consistenze e temperature
+€ 80
+Croccantino di foie gras in crosta di mandorle di Noto e nocciole del Piemonte con Aceto Balsamico Tradizionale di Modena Villa Manodori
+€ 90
+Culatello di Zibello Antiche Razze 42 mesi di stagionatura accompagnato da mostarda di mele Campanine
+€ 80
+Primi Piatti
+Ravioli di porri, tartufo nero pregiato e foie gras
+€ 90
+Tortellini in crema di Parmigiano Reggiano
+€ 80
+Tortellini del dito mignolo in brodo di cappone
+€ 80
+Tagliatelle al ragù
+€ 80
+Secondi Piatti
+Astice in doppia salsa spumosa, acida e dolce
+€ 110
+Stiamo ancora decidendo che pesce servire!
+€ 110
+This little piggy went to the market
+€ 110
+Un’interpretazione del filetto alla Rossini con foie gras e caviale
+€ 150
+ </template></category>
+
+<category><pattern>menu</pattern><template><srai>MENÙ</srai></template></category>
+
+
+<category>
+    <pattern>social</pattern>
+    <template>Seguici sui seguenti social : 
+
+<link>
+    <text>-Instagram</text>
+    <url>https://www.instagram.com/</url>
+</link>
+<link>
+    <text>-Facebook</text>
+    <url>https://it-it.facebook.com/</url>
+</link></template>
+</category>
+<category>
+    <pattern>aiuto</pattern>
+    <template>
+
+Per iniziare a utilizzare il bot, digita "info" oppure "informazioni"
+
+</template>
+</category>
+
+<category><pattern>help </pattern><template><srai>AIUTO</srai></template></category>
+
+<category>
+    <pattern>ciao</pattern>
+    <template>ciao a te, come stai?</template>
+</category>
+  <category>
+    <pattern>Ciao, come stai </pattern>
+    <template>t' apposto grazie, e te?</template>
+  </category>
+</aiml>
